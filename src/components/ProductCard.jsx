@@ -14,6 +14,7 @@ const ProductCard = ({ product }) => {
     <div className="border rounded-lg p-4">
       <img src={product.image} alt={product.name} className="w-full h-48 object-cover mb-4" />
       <h3 className="text-lg font-bold">{product.name}</h3>
+      <h3 className="text-1xl font-semi-bold">{product.description}</h3>
       <p className="text-gray-700">${product.price.toFixed(2)}</p>
       <button 
         onClick={handleAddToCart} 
